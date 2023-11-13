@@ -11,8 +11,8 @@ public class TitulosSAXhandler extends DefaultHandler{
     
     public TitulosSAXhandler()
     {
-        System.out.println("LISTADOS DE TITULOS");
-        System.out.println("-------------------");
+        System.out.println("LISTADO DE TITULOS");
+        System.out.println("------------------");
     }
 
     @Override
