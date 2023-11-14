@@ -24,13 +24,13 @@ public class AccesoSAX {
             return -1;
         }
     }
-    public int parsearXMLconTitulosSAXhandler(File f)
+    public int parsearXMLconEtiquetasSAXhandler(File f,int obj)
     {
         try
         {
         SAXParserFactory factory = SAXParserFactory.newInstance();
         parser = factory.newSAXParser();
-        TitulosSAXhandler sh = new TitulosSAXhandler();
+        EtiquetasSAXhandler sh = new EtiquetasSAXhandler(obj);
         parser.parse(f, sh);
         return 0;
         }

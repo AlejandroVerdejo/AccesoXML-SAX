@@ -38,6 +38,21 @@ public class LibrosSAXhandler extends DefaultHandler{
         String contenido = elemento.toString().trim();
         if (!contenido.isEmpty() && count < 2)
         {
+            //Para que muestre el Titulo y el Autor en la misma linea
+            /*if (qName.equals("Titulo") || qName.equals("Autor"))
+            {
+                System.out.print(contenido + "  ");
+                count++;
+                if (qName.equals("Autor"))
+                {
+                    System.out.println("");
+                }
+            }
+            else
+            {
+                System.out.println(contenido);
+                count++;
+            }*/
             System.out.println(contenido);
             count++;
         }
